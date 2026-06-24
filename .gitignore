@@ -1,0 +1,4 @@
+﻿node_modules/
+server/gate_entry.db
+*.db
+.env

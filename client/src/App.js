@@ -12,7 +12,7 @@ export const useTheme = () => useContext(ThemeContext);
 const AuthContext = createContext(null);
 export const useAuth = () => useContext(AuthContext);
 
-const API = axios.create({ baseURL: '/api' });
+const API = axios.create({ baseURL: 'https://gems-backend-uy8a.onrender.com/api' });
 
 API.interceptors.request.use(config => {
   const token = localStorage.getItem('token');

@@ -2,3 +2,4 @@
 server/gate_entry.db
 *.db
 .env
+README.md

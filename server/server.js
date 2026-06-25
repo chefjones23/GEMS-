@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET || 'gate_entry_super_secret_key_2024';
 const DB_PATH = path.join(__dirname, 'gate_entry.db');
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ 
+  origin: ['http://localhost:3000', 'https://gems-ten.vercel.app'],
+  credentials: true 
+}));
 app.use(express.json());
 
 let db;
